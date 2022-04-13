@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Photo Book</title>
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css?h=26e2a3ece291ac3c2dea16096f86ca56">
+    <link rel="stylesheet" href="../assets/css/FontAwesome.css?h=16ab057213b0065fe3f5bda37a221227">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.min.css?h=a24cb0112e51902b6b3ed4606a7cd727">
+    <link rel="stylesheet" href="../assets/css/bootstrap/bootstrap-grid.compiled.css?h=d23b62a8058571299d72674fbc1f24a7">
+    <link rel="stylesheet" href="../assets/css/bootstrap/bootstrap-reboot.compiled.css?h=33ff2a828ab2f972008de0235fc7f607">
+    <link rel="stylesheet" href="../assets/css/bootstrap/bootstrap-utilities.compiled.css?h=98c0e6e84855e7c832e53a8a51c046be">
+    <link rel="stylesheet" href="../assets/css/bootstrap/bootstrap.compiled.css?h=34a08561b813476427257e75e9f3e1e2">
+    <link rel="stylesheet" href="../assets/css/black-book-view.css?h=799df2c0e2a84eb63b260048753c5ec1">
+    <link rel="stylesheet" href="../assets/css/font-awesome.min.css?h=ca882ac7168f66052c1c2470990746a5">
+    <link rel="stylesheet" href="../assets/css/short-black-book-view.css?h=2f59cec9788b57ceb9909b6fb9a45bde">
+    <link rel="stylesheet" href="../assets/css/short-white-book-view.css?h=dfecd6301e0fb67e0bd6234173f4f18d">
+    <link rel="stylesheet" href="../assets/css/white-book-view.css?h=d908b024b4f9d7cc73bbf3af85a5872e">
+</head>
+
+<body><div id="fb3d-ctx" class="flip-book">
+  <div class="view">
+    <div class="fnav">
+      <div class="prev">
+        <a class="cmdBackward" href="#"><span class="icon"><i class="fa fa-angle-left" title="<$tr>Previous page</$tr>"></i></span></a>
+      </div>
+      <div class="next">
+        <a class="cmdForward" href="#"><span class="icon"><i class="fa fa-angle-right" title="<$tr>Next page</$tr>"></i></span></a>
+      </div>
+    </div>
+    <div class="widLoadingProgress loading-progress hidden">
+      <div class="progress">
+      </div>
+      <div class="txtLoadingProgress caption">
+      </div>
+    </div>
+    <div class="widLoading page-loading hidden">
+    </div>
+  </div>
+
+  <div class="widFloatWnd float-wnd hidden">
+    <div class="header">
+      &lt;$tr&gt;Table of contents<!--$tr-->
+      <a href="#" title="<$tr>Close</$tr>" class="close cmdCloseToc">
+        <span class="icon"><i class="fa fa-times"></i></span>
+      </a>
+    </div>
+    <div class="body">
+      <div class="ctrl">
+        <div class="toc">
+          <div class="toc-menu widTocMenu">
+            <ul>
+              <li class="cmdBookmarks"><a href="#">&lt;$tr&gt;Bookmarks<!--$tr--></a></li>
+              <li class="cmdThumbnails"><a href="#">&lt;$tr&gt;Thumbnails<!--$tr--></a></li>
+              <li class="cmdSearch"><a href="#">&lt;$tr&gt;Search<!--$tr--></a></li>
+            </ul>
+          </div>
+          <div class="widBookmarks toc-view">
+
+          </div>
+          <div class="widThumbnails toc-view">
+
+          </div>
+          <div class="widSearch toc-view">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="controls">
+
+    <div class="ctrl js-center">
+      <nav class="fnavbar">
+        <ul class="fnav">
+
+          <li class="fnav-item cmdZoomIn"><a href="#"><span class="icon"><i class="fa fa-search-plus" title="<$tr>Zoom in</$tr>"></i></span></a></li>
+          <li class="fnav-item cmdZoomOut"><a href="#"><span class="icon"><i class="fa fa-search-minus" title="<$tr>Zoom out</$tr>"></i></span></a></li>
+          <li class="fnav-item cmdDefaultZoom"><a href="#"><span class="icon"><i class="fa fa-compress" title="<$tr>Fit view</$tr>"></i></span></a></li>
+          <li class="fnav-item cmdToc"><a href="#"><span class="icon"><i class="fa fa-bookmark" title="<$tr>Table of contents</$tr>"></i></span></a></li>
+          <li class="fnav-item cmdFastBackward"><a href="#"><span class="icon"><i class="fa fa-fast-backward" title="<$tr>10 pages backward</$tr>"></i></span></a></li>
+          <li class="fnav-item cmdBackward"><a href="#"><span class="icon"><i class="fa fa-backward" title="<$tr>Previous page</$tr>"></i></span></a></li>
+          <li class="fnav-item">
+            <div class="pages">
+              <input type="text" class="number inpPage" maxlength="4" placeholder="1">
+              <input type="text" class="amount inpPages" readonly="" maxlength="4" placeholder="1">
+            </div>
+          </li>
+          <li class="fnav-item cmdForward"><a href="#"><span class="icon"><i class="fa fa-forward" title="<$tr>Next page</$tr>"></i></span></a></li>
+          <li class="fnav-item cmdFastForward"><a href="#"><span class="icon"><i class="fa fa-fast-forward" title="<$tr>10 pages forward</$tr>"></i></span></a></li>
+          <li class="fnav-item cmdSave"><a href="#"><span class="icon"><i class="fa fa-download" title="<$tr>Download</$tr>"></i></span></a></li>
+          <li class="fnav-item cmdPrint"><a href="#"><span class="icon"><i class="fa fa-print" title="<$tr>Print</$tr>"></i></span></a></li>
+          <li class="fnav-item cmdFullScreen"><a href="#"><span class="icon"><i class="fa fa-arrows-alt" title="<$tr>Full screen</$tr>"></i></span></a></li>
+          <li class="dropup fnav-item toggle widSettings">
+            <a href="#"><div class="icon-caret"><span class="icon"><i class="fa fa-cog" title="<$tr>Settings</$tr>"></i> <i class="caret"></i></span></div></a>
+            <ul class="menu hidden">
+              <li class="cmdSmartPan"><a href="#"><span class="icon"><i class="fa fa-eye"></i></span> &lt;$tr&gt;Smart pan<!--$tr--></a></li>
+              <li class="cmdSinglePage"><a href="#"><span class="icon"><i class="fa fa-file-o"></i></span> &lt;$tr&gt;Single page<!--$tr--></a></li>
+              <li class="cmdSounds"><a href="#"><span class="icon"><i class="fa fa-volume-up"></i></span> &lt;$tr&gt;Sounds<!--$tr--></a></li>
+              <li class="cmdStats"><a href="#"><span class="icon"><i class="fa fa-line-chart"></i></span> &lt;$tr&gt;Stats<!--$tr--></a></li>
+              <li class="divider"></li>
+              <li class="cmdLightingUp"><a href="#"><span class="icon"><i class="fa fa-chevron-up"></i></span> &lt;$tr&gt;Increase lighting<!--$tr--></a></li>
+              <li class="cmdLightingDown"><a href="#"><span class="icon"><i class="fa fa-chevron-down"></i></span> &lt;$tr&gt;Reduce lighting<!--$tr--></a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+  </div>
+</div>
+    <script src="../assets/js/jquery.min.js?h=84e399b8f2181ccd73394fdeddff1638"></script>
+    <script src="../assets/bootstrap/js/bootstrap.min.js?h=5488c86a1260428f0c13c0f8fb06bf6a"></script>
+    <script src="../assets/js/default-book-view.js?h=26769440cc840881dafdd00ae43e0c12"></script>
+    <script src="../assets/js/html2canvas.min.js?h=07e548be7741676c48528025c35dc029"></script>
+    <script src="../assets/js/three.min.js?h=46a688c7e13e52123da51c241bf681ad"></script>
+    <script src="../assets/js/pdf.min.js?h=a57dea2ee381109649f855bea9f9287b"></script>
+    <script src="../assets/js/3dflipbook.min.js?h=73982bb3a9dc904f0b61d5ceee1de723"></script>
+</body>
+
+</html>
