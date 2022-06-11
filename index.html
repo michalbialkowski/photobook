@@ -39,6 +39,14 @@
     <script src="assets/js/pdf.min.js"></script>
     <!-- <script src="assets/js/pdf.worker.js"></script> -->
     <!-- <script src="assets/js/default-book-view.js"></script> -->
+	
+	<script type="text/javascript">
+		window.PDFJS_LOCALE = {
+		  pdfJsWorker: 'assets/js/pdf.worker.js',
+		  pdfJsCMapUrl: 'cmaps'
+		};
+	</script>
+	
     <script src="assets/js/3dflipbook.min.js"></script>
 	
 	<script type="text/javascript">
@@ -56,18 +64,18 @@
 				data: jsData.urls['templates/default-book-view.html']        }],
 			  script: [{
 				url: 'assets/js/default-book-view.js',
-				data: jsData.urls['js/default-book-view.js']        }],
+				data: jsData.urls['assets/js/default-book-view.js']        }],
 			  styles: [{
 				url: 'assets/css/font-awesome.min.css',
-				data: jsData.urls['css/font-awesome.min.css']        },{
+				data: jsData.urls['assets/css/font-awesome.min.css']        },{
 				url: 'assets/css/black-book-view.css',
-				data: jsData.urls['css/black-book-view.css']        },],
+				data: jsData.urls['assets/css/black-book-view.css']        },],
 			  sounds: {"startFlip":"sounds\/start-flip.mp3","endFlip":"sounds\/end-flip.mp3"},
 			  init: undefined      };
 		  }
 		  ,
 		  controlsProps: {
-			downloadURL: 'books/pdf/FoxitPdfSdk.pdf'
+			downloadURL: 'content/photobook.pdf'
 		  }
 		});
 	</script>
