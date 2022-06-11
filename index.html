@@ -52,6 +52,18 @@
 			props.cover.padding = 0.002;
 			return props;
 		  },
+		  template: { // by means this property you can choose appropriate skin
+			html: 'templates/default-book-view.html',
+			styles: [
+			  'assets/css/black-book-view.css'// or one of white-book-view.css, short-white-book-view.css, shart-black-book-view.css
+			],
+			links: [{
+			  rel: 'stylesheet',
+			  href: 'assets/css/font-awesome.min.css'
+			}],
+			script: 'assets/js/default-book-view.js',
+			printStyle: undefined // or you can set your stylesheet for printing ('print-style.css')
+		  },
 		  controlsProps: {
 			downloadURL: 'content/photobook.pdf'
 		  }
