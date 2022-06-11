@@ -32,14 +32,15 @@
         </main>
     </div>
 	
+	
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 	
-    <!-- <script src="assets/js/html2canvas.min.js"></script> -->
+    <script src="assets/js/html2canvas.min.js"></script>
     <script src="assets/js/three.min.js"></script>
     <script src="assets/js/pdf.min.js"></script>
-    <!-- <script src="assets/js/pdf.worker.js"></script> -->
-    <!-- <script src="assets/js/default-book-view.js"></script> -->
+    <script src="assets/js/pdf.worker.js"></script>
+    <script src="assets/js/default-book-view.js"></script>
 	
 	<script type="text/javascript">
 		window.PDFJS_LOCALE = {
@@ -58,23 +59,6 @@
 			props.cover.padding = 0.002;
 			return props;
 		  },
-		  template:     function() {
-			return {
-			  html: [{
-				url: 'templates/default-book-view.html',
-			  }],
-			  script: [{
-				url: 'assets/js/default-book-view.js',
-			  }],
-			  styles: [{
-				url: 'assets/css/font-awesome.min.css',
-				},{
-				url: 'assets/css/black-book-view.css',
-			    },],
-			  sounds: {"startFlip":"sounds\/start-flip.mp3","endFlip":"sounds\/end-flip.mp3"},
-			  init: undefined      };
-		  }
-		  ,
 		  controlsProps: {
 			downloadURL: 'content/photobook.pdf'
 		  }
